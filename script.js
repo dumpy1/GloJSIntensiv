@@ -1,25 +1,34 @@
-var money = 1;
+var money = 19800;
 
-var income = 2 ;
+var income = "1500" ;
 
-var addExpenses = true;
+var addExpenses = "Комуналка, Кредит, алименты";
 
-let deposit = 4;
+let deposit = true;
 
-const mission = 'win';
+const mission = 458016.52;
 
-const period = 'month';
+const period = 6;
 
 
-alert ('сообщение с любым текстом');
 
-console.log('сообщение с любым текстом');
+console.log('typeof money: ' +typeof(money));
+console.log('typeof income: ' +typeof(income));
+console.log('typeof deposit: ' +typeof(deposit));
+console.log('income.length: ' +income.length);
+console.log('Период ' + (period) + ' месяцев ');
+console.log('Цель заработать ' + (mission) + ' рублей' );
 
-console.log('money: ', money);
-console.log('income: ', income);
-console.log('addExpenses: ', addExpenses);
-console.log('deposit: ', deposit);
-console.log('mission: ', mission);
-console.log('period: ', period);
+addExpenses = addExpenses.toLocaleLowerCase ();
+let arr = addExpenses.split(',');
+console.log('arr: ', arr);
+
+let budgetDay = money/30;
+
+console.log('budgetDay: ', budgetDay);
+
+console.log(money % 30);
+
+
 
 console.log('похоже, что всё работает!!!');
