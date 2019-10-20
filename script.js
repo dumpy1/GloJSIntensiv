@@ -1,3 +1,5 @@
+'use strict';
+
 var money = 19800;
 
 var income = "1500" ;
